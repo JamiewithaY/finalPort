@@ -1,0 +1,44 @@
+.gridContainerMain{
+	display: grid;
+	grid-template-columns:1fr 4fr 1fr;
+	grid-gap:1em;
+	grid-auto-rows: minmax(100px,auto);
+}
+
+
+.gridContainerMain {
+	background: #eee;
+	padding: 1em;
+}
+
+.gridContainerMain >div:nth-child(odd){
+	background: #ddd;
+}
+
+
+
+
+
+/*//granium styles*/
+/*.bloc-logo {
+    position: relative;
+    width: 130px;
+    height: 49px;
+    float: left;
+}
+
+.bloc-logo canvas,
+.bloc-logo .logo-mask {
+    display: block;
+    width: 130px;
+    height: 49px;
+}
+
+.bloc-logo .logo-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 130px;
+    background-image: url("../img/logo-mask.png");
+    text-indent: -9999px;
+}*/
