@@ -3,29 +3,129 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Fun Stuff</title>
+	<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--       Local CSS  -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- JS Libraries -->
+
+	   <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+
 </head>
 <body>
 
-<div class="gridContainerProjects">
+<div class="container">
 
-	<div class="navbar">
-			<a href="index.html">Home</a>
-		 	<a href="projects.html">Portfolio</a>
-		 	<a href="projects.html">Contact</a>
+	<!-- Navigation -->
+	 <nav>
+	    <div class="nav-wrapper  cyan darken-4">
+	      <a href="https://www.youtube.com/watch?v=c-hA9NuSEMs target=_blank" class="brand-logo">Jayme Howard</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="index.html">Home</a></li>
+		    <li><a href="projects.html">Portfolio</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo" >
+	        <li><a href="index.html">Home</a></li>
+		    <li><a href="projects.html">Portfolio</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	    </div>
+	</nav>
+
+<!-- Projects carousel -->
+<div class="projectsHead cyan darken-2">
+	<div class="row">
+	<div class="col s12">
+		<h3>Projects</h3>
+		<p> Scroll through the carousel and click to view.</p>
 	</div>
+	</div>
+</div>
+<div class="carouselDiv">
+	<div class="carousel">
+	    <a class="carousel-item" href="https://jamiewithay.github.io/PlotHoles/" target="_blank"><img src="http://www.dingdongloungenz.com/wp-content/uploads/2017/01/80s.jpg" height="200" width="200"></a>
 
+	    <a class="carousel-item" href="https://jamiewithay.github.io/TriviaGame/" target="_blank"><img src="http://www.tinrooflouisville.com/getattachment/7362f7de-18d1-4261-9fbc-43babc56d461" height="200" width="200"></a>
 
+	    <a class="carousel-item" href="https://jamiewithay.github.io/Train-Schedule/" target="_blank"><img src="https://i.ytimg.com/vi/J_O0lWn0ynk/maxresdefault.jpg" height="200" width="200"></a>
 
+	    <a class="carousel-item" href="https://jamiewithay.github.io/week-4-game/" target="_blank"><img src="https://i.pinimg.com/736x/bc/a6/7f/bca67f5bbffc0d25b6e4e7c12de54069--crystal-gems-crystal-healing.jpg" height="200" width="200"></a>
+	    
+	 </div>
+</div>
+<!--  Projects Description Table -->
+	<div class="table">
+     <table class="striped">
+     	<div class="tableHead">
+        <thead>
+          <tr class="cyan darken-2">
+              <th>Project Title</th>
+              <th>Description</th>
+              <th>Technology Highlights</th>
+          </tr>
+        </thead>
+		</div>
+
+        <tbody>
+          <tr>
+            <td>Retro Plot Holes</td>
+            <td>Utilizing two API's to build a Trivia Game using OMDB API and Giphy's API</td>
+            <td> API's, HTML/CSS, JS, jQuery, Firebase</td>
+          </tr>
+          <tr>
+            <td>Trivia Game</td>
+            <td> Select the correct answer to each question before the timer runs out.</td>
+            <td>HTML/CSS, JS</td>
+          </tr>
+          <tr>
+            <td>Train-Schedule</td>
+            <td>Add a new Train to the Schedule.</td>
+            <td>Minute.js and Firebase</td>
+          </tr>
+          <tr>
+            <td>Crystal Clicker Game</td>
+            <td>Try to click the correct crystal to match the computer generated number.</td>
+            <td>HTML/CSS, JS</td>
+          </tr>
+        </tbody>
+      </table>
+	</div>
 	
+<!-- FOOTER -->
+	 	<footer class="page-footer  cyan darken-4">
+	 		<div class="fontFooter">
+		 		<div class="row">
+		 		<div class="col s8">
+		 			<div class="copyright white-text">
+	            	© 2017 Copyright 
+	            	</div>
+		 		</div>
+		 		<div class="col s4">
+	            <a class="grey-text text-lighten-3" href="https://github.com/JamiewithaY" target="_blank">GitHub   |</a>
+	            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank">LinkedIn   |</a>
+	            <a class="grey-text text-lighten-3" href="https://www.visualcv.com/jayme-howard" target="_blank">Resume</a></li>
+	            </div>
+	            </div>     
+            </div>
+        </footer>
 
-	<div class="footer">
-		<a href= "https://github.com/JamiewithaY" target="_blank"><img src="http://hammerjs.github.io/assets/img/github-icon.png" alt="GitHub" width=60 height=60</a>
 
-		<a href= "https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank"><img src="https://intuitivedigital.com/wp-content/uploads/2016/02/linkedin-icon.png" alt="linkedin" width=60 height=60</a>
-
-		<a href= "https://www.instagram.com/jamiewithay/" target="_blank"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/cc/66/9e/cc669eec-38ec-c700-945d-d80b9bb9fdc1/source/1200x630bb.jpg" alt="instagram" width=60 height=60</a>
-	</div>
 </div>	
-	
+
+
+<!-- materialize and jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+<script type="text/javascript" src= "action.js"></script>
+
 </body>
 </html>

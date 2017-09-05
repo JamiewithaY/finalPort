@@ -3,28 +3,120 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Let's Connect</title>
+	<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!--Local CSS  -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- JS Libraries -->
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 </head>
+
 <body>
-<div class="gridContainerContact">
-
-	<div class="navbar">
-			<a href="index.html">Home</a>
-		 	<a href="projects.html">Portfolio</a>
-		 	<a href="projects.html">Contact</a>
-	</div>
 
 
+<!-- Navigation -->
+	 <nav>
+	    <div class="nav-wrapper  cyan darken-4">
+	      <a href="https://www.youtube.com/watch?v=c-hA9NuSEMs target=_blank" class="brand-logo">Jayme Howard</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="index.html">Home</a></li>
+		    <li><a href="projects.html">Portfolio</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo" >
+	        <li><a href="index.html">Home</a></li>
+		    <li><a href="projects.html">Portfolio</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	    </div>
+	</nav>
+
+
+<!-- contact form -->
+<div id="form" class="container cyan lighten-5 ">
+	<div class="row">
+	<div class="col offset-10 s12">
+
+	  <div class="row ">
+	    <form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input id="first_name" type="text" class="validate">
+	          <label for="first_name">First Name</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="last_name" type="text" class="validate">
+	          <label for="last_name">Last Name</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
+	          <input id="email" type="email" class="validate">
+	          <label for="email">Email</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="col s12">
+	          <div class="input-field col s12">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Talk To Me</label>
+	        </div>
+	          </div>
+	        </div>
+	<!-- Submit Button -->
+	        <div class="row">
+	        	<div class="col s12 center-align">
+	        		<button  id="submitBtn" class="btn waves-effect waves-light orange darken- " type="submit" name="action">Submit<i class="material-icons right">send</i>
+	 	</button>
+	        	</div>
+	        </div>
+	   </div>
+
+ </div>   
+</div>	
+	    
+</div>
 
 	
+<!-- FOOTER -->
+		 <footer class="page-footer  cyan darken-4">
+	 		<div class="fontFooter">
+		 		<div class="row">
+		 		<div class="col s8">
+		 			<div class="copyright white-text">
+	            	© 2017 Copyright 
+	            	</div>
+		 		</div>
+		 		<div class="col s4">
+	            <a class="grey-text text-lighten-3" href="https://github.com/JamiewithaY" target="_blank">GitHub   |</a>
+	            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank">LinkedIn   |</a>
+	            <a class="grey-text text-lighten-3" href="https://www.visualcv.com/jayme-howard" target="_blank">Resume</a></li>
+	            </div>
+	            </div>     
+            </div>
+        </footer>
 
-	<div class="footer">
-		<a href= "https://github.com/JamiewithaY" target="_blank"><img src="http://hammerjs.github.io/assets/img/github-icon.png" alt="GitHub" width=60 height=60</a>
 
-		<a href= "https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank"><img src="https://intuitivedigital.com/wp-content/uploads/2016/02/linkedin-icon.png" alt="linkedin" width=60 height=60</a>
+</div>
+	
 
-		<a href= "https://www.instagram.com/jamiewithay/" target="_blank"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/cc/66/9e/cc669eec-38ec-c700-945d-d80b9bb9fdc1/source/1200x630bb.jpg" alt="instagram" width=60 height=60</a>
-	</div>
-</div>	
+<!-- materialize and jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+<script type="text/javascript" src= "action.js"></script>
 </body>
 
 </html>

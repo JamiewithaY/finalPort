@@ -3,83 +3,134 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jayme Howard: Full Stack JavaScript Developer</title>
+
+
+<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--       Local CSS  -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 <!-- JS Libraries -->
-	
-	<link href="./multiple.css" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+
 
 </head>
 <body>
-<div class="gridContainerMain">
+<div class="container">
 
-	<div class="navbar">
-		<a href="index.html">Home</a>
-	 	<a href="projects.html">Portfolio</a>
-	 	<a href="projects.html">Contact</a>
-	</div>
+<!-- Navigation -->
+	 <nav>
+	    <div class="nav-wrapper  cyan darken-4">
+	      <a href="https://www.youtube.com/watch?v=c-hA9NuSEMs target=_blank" class="brand-logo">Jayme Howard</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="index.html">Home</a></li>
+		    <li><a href="projects.html">Portfolio</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo" >
+	        <li><a href="index.html">Home</a></li>
+		    <li><a href="projects.html">Portfolio</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+	      </ul>
+	    </div>
+	</nav>
 
-	 <div class="jumbotron">
-    	<h1>Jr. Full Stack JavaScript Developer</h1> 
-    		<div class="img">
-		 		<img src="profile-pic.jpeg" class="img-circle" alt="profile pic" width="300" height="300">  
-			</div> 
-  	</div>
- 
+<!-- Parallax img -->
+ <div class="parallax-container valign-wrapper">
+ 	<div class="container">
+ 	
+ 		<div class="row valign">
+ 			<div class="elevatorPitch center-align">
+	 			<div class="col s8 thin-text white-text hoverable ">
+				
+	 				<p > Hi I'm Jayme. I am a shiny new Jr javaScript Developer. Take a look around and let's connect soon! </p>
+	  			</div>
+  			</div>
+			<div class="col s4">
+				<div class="facePic">
+ 				<img src="images/profile-pic.jpeg" alt="profile pic" width="220" height="220"> 
+ 				</div>
+ 			</div>
+ 			
 
+ 		</div>
+ 	</div>
+      <div class="parallax"><img src="images/texture1.jpg" ></div>
+</div>
+	
+	
+	<!-- body with bio and skillset list -->
 	
 
-	<div class="bio">
-		<h2>Bio:</h2>
-		<p>Welcome and Thank you for stopping by! My name is Jayme Howard and I am a Jr JavaScript Developer in the Austin, TX area. I started my coding journey several months ago and recently graduated from the UT Austin JavaScript Full Stack Bootcamp. I am thrilled to be joining the tech industry and look forward to diving into a new career using all me new skills, learning plenty along the way and creating beautiful solutions. Please visit my Portfolio page to see what I've been up to or reach out through my contact page. I look forward to hearing from you.
-		 </p>
+	<div class="row">
+		
+		<div class="col s8">	
+			<div class="bio">
+			<h3>About</h3>
+			<p>Welcome! I am a Jr JavaScript Developer living in Austin, TX. I started my coding journey several months ago and recently graduated from the UT Austin javaScript Full Stack Bootcamp. I am thrilled to be joining the tech industry and look forward to diving into a new career using all my new skills, learning plenty along the way and creating beautiful solutions. Please visit my Portfolio page to see what I've been up to. I look forward to hearing from you.
+			 </p>
+		 	</div> 
+		</div>
+	
+		<div class="col s4 skillList ">
+			<p class="skillBtnText "> Check out some of the skills in my toolbelt so far by clicking below </p>
+			<!-- Technolgoies Button	 -->
+			<a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="CSS/HTML | JavaScript |	Materalize | Node.js | API | MongoDB | MySql | jQuery | Express.js | Git/Github | PHP |
+		      Laravel |	Firebase | React.js | Laravel | Composer">Technologies</a>
+		        
+     	</div>
+    </div>
+		
+		
+	
+		
+</div>
 
-		 <h3>Skillset:</h3>
-		 <button type="button" class="btn btn-danger">HTML</button>
-		 <button type="button" class="btn btn-warning">CSS</button>
-		 <button type="button" class="btn btn-danger">JavaScript</button>
-		 <button type="button" class="btn btn-warning">Node.js</button>
-		 <button type="button" class="btn btn-danger">API</button>
-		 <button type="button" class="btn btn-warning">MongoDB</button>
-		 <button type="button" class="btn btn-danger">MySql</button>
-		 <button type="button" class="btn btn-warning">jQuery</button>
-		 <button type="button" class="btn btn-danger">GIT-GitHub</button>
-		 <button type="button" class="btn btn-warning">Express.js</button>
-		 <button type="button" class="btn btn-danger">Babel</button>
-		 <button type="button" class="btn btn-warning">Bootstrap</button>
-		 <button type="button" class="btn btn-danger">CSS Grids</button>
-		 <button type="button" class="btn btn-warning">PHP</button>
-		 <button type="button" class="btn btn-danger">Composer</button>
-		 <button type="button" class="btn btn-warning">Laravel</button>
-		 <button type="button" class="btn btn-danger">React.js</button>
+	 	<footer class="page-footer  cyan darken-4">
+	 		<div class="fontFooter">
+		 		<div class="row">
+		 		<div class="col s8">
+		 			<div class="copyright white-text">
+	            	© 2017 Copyright 
+	            	</div>
+		 		</div>
+		 		<div class="col s4">
+	            <a class="grey-text text-lighten-3" href="https://github.com/JamiewithaY" target="_blank">GitHub   |</a>
+	            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank">LinkedIn   |</a>
+	            <a class="grey-text text-lighten-3" href="https://www.visualcv.com/jayme-howard" target="_blank">Resume</a></li>
+	            </div>
+	            </div>     
+            </div>
+        </footer>
 
-		 <h3>Skillset Wish List:</h3>
-		 <button type="button" class="btn btn-warning">Python</button>
-		 <button type="button" class="btn btn-warning">Big Data</button>
-		 <button type="button" class="btn btn-warning">Mobile Development</button>
-	</div>
+        
 
-
-	<div class="footer">
-		<a href= "https://github.com/JamiewithaY" target="_blank"><img src="http://hammerjs.github.io/assets/img/github-icon.png" alt="GitHub" width=60 height=60</a>
-
-		<a href= "https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank"><img src="https://intuitivedigital.com/wp-content/uploads/2016/02/linkedin-icon.png" alt="linkedin" width=60 height=60</a>
-
-		<a href= "https://www.instagram.com/jamiewithay/" target="_blank"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/cc/66/9e/cc669eec-38ec-c700-945d-d80b9bb9fdc1/source/1200x630bb.jpg" alt="instagram" width=60 height=60</a>
-	</div>
-
-
+	
 </div>
 
 
+
+
+
+
+
+ <!-- Local JS file -->
 	
-</body>
-<script type="text/javascript" src= "action.js"></script>
+
+<!-- materialize and jQuery -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
+<script type="text/javascript" src= "action.js"></script>
 
-<script src="./multiple.min.js"></script>
-<script src="granim.min.js"></script>
+</body>
+
 </html>
