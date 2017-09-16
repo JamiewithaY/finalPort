@@ -19,6 +19,9 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
 
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+</head>
 
 </head>
 <body>
@@ -50,7 +53,7 @@
  			<div class="elevatorPitch center-align">
 	 			<div class="col s8 thin-text white-text hoverable ">
 				
-	 				<p > Hi I'm Jayme. I am a shiny new Jr javaScript Developer. Take a look around and let's connect soon! </p>
+	 				<p > Hi I'm Jayme. I am a shiny new Jr javaScript Developer. I have a passion for taking big problems and turning them into a beautiful solutions. Take a look at some of my recent projects or drop me a line on my contact page. Thanks for stopping by! </p>
 	  			</div>
   			</div>
 			<div class="col s4">
@@ -71,28 +74,140 @@
 
 	<div class="row">
 		
-		<div class="col s8">	
+		<!-- <div class="col s8">	
 			<div class="bio">
 			<h3>About</h3>
 			<p>Welcome! I am a Jr JavaScript Developer living in Austin, TX. I started my coding journey several months ago and recently graduated from the UT Austin javaScript Full Stack Bootcamp. I am thrilled to be joining the tech industry and look forward to diving into a new career using all my new skills, learning plenty along the way and creating beautiful solutions. Please visit my Portfolio page to see what I've been up to. I look forward to hearing from you.
 			 </p>
 		 	</div> 
-		</div>
+		</div> -->
 	
 		<div class="col s4 skillList ">
-			<p class="skillBtnText "> Check out some of the skills in my toolbelt so far by clicking below </p>
+			<p class="skillBtnText "> Check out my current framework specialities! </p>
 			<!-- Technolgoies Button	 -->
 			<a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="CSS/HTML | JavaScript |	Materalize | Node.js | API | MongoDB | MySql | jQuery | Express.js | Git/Github | PHP |
-		      Laravel |	Firebase | React.js | Laravel | Composer">Technologies</a>
+		      Laravel |	Firebase | React.js | Laravel | Composer">Frameworks</a>
 		        
      	</div>
     </div>
 		
-		
+	
+	<!-- Projects carousel -->
+<div class="projectsHead cyan darken-2">
+	<div class="row">
+	<div class="col s12">
+		<h3>Projects</h3>
+		<p> Scroll through the carousel and click to view.</p>
+	</div>
+	</div>
+</div>
+<div class="carouselDiv">
+	<div class="carousel">
+	    <a class="carousel-item" href="https://jamiewithay.github.io/PlotHoles/" target="_blank"><img src="http://www.dingdongloungenz.com/wp-content/uploads/2017/01/80s.jpg" height="200" width="200"></a>
+
+	    <a class="carousel-item" href="https://jamiewithay.github.io/TriviaGame/" target="_blank"><img src="http://www.tinrooflouisville.com/getattachment/7362f7de-18d1-4261-9fbc-43babc56d461" height="200" width="200"></a>
+
+	    <a class="carousel-item" href="https://jamiewithay.github.io/Train-Schedule/" target="_blank"><img src="https://i.ytimg.com/vi/J_O0lWn0ynk/maxresdefault.jpg" height="200" width="200"></a>
+
+	    <a class="carousel-item" href="https://jamiewithay.github.io/week-4-game/" target="_blank"><img src="https://i.pinimg.com/736x/bc/a6/7f/bca67f5bbffc0d25b6e4e7c12de54069--crystal-gems-crystal-healing.jpg" height="200" width="200"></a>
+	    
+	 </div>
+</div>
+<!--  Projects Description Table -->
+	<div class="table">
+     <table class="striped">
+     	<div class="tableHead">
+        <thead>
+          <tr class="cyan darken-2">
+              <th>Project Title</th>
+              <th>Description</th>
+              <th>Technology Highlights</th>
+          </tr>
+        </thead>
+		</div>
+
+        <tbody>
+          <tr>
+            <td>Retro Plot Holes</td>
+            <td>Utilizing two API's to build a Trivia Game using OMDB API and Giphy's API</td>
+            <td> API's, HTML/CSS, JS, jQuery, Firebase</td>
+          </tr>
+          <tr>
+            <td>Trivia Game</td>
+            <td> Select the correct answer to each question before the timer runs out.</td>
+            <td>HTML/CSS, JS</td>
+          </tr>
+          <tr>
+            <td>Train-Schedule</td>
+            <td>Add a new Train to the Schedule.</td>
+            <td>Minute.js and Firebase</td>
+          </tr>
+          <tr>
+            <td>Crystal Clicker Game</td>
+            <td>Try to click the correct crystal to match the computer generated number.</td>
+            <td>HTML/CSS, JS</td>
+          </tr>
+        </tbody>
+      </table>
+	</div>	
 	
 		
 </div>
 
+
+
+        
+
+	
+</div>
+
+
+<!-- contact form -->
+<div id="form" class="container cyan lighten-5 ">
+	<div class="row">
+	<div class="col offset-10 s12">
+
+	  <div class="row ">
+	    <form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input id="first_name" type="text" class="validate">
+	          <label for="first_name">First Name</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="last_name" type="text" class="validate">
+	          <label for="last_name">Last Name</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
+	          <input id="email" type="email" class="validate">
+	          <label for="email">Email</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="col s12">
+	          <div class="input-field col s12">
+	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <label for="textarea1">Talk To Me</label>
+	        </div>
+	          </div>
+	        </div>
+	<!-- Submit Button -->
+	        <div class="row">
+	        	<div class="col s12 center-align">
+	        		<button  id="submitBtn" class="btn waves-effect waves-light orange darken- " type="submit" name="action">Submit<i class="material-icons right">send</i>
+	 	</button>
+	        	</div>
+	        </div>
+	   </div>
+
+ </div>   
+</div>	
+	    
+</div>
+
+<!-- FOOTER -->
 	 	<footer class="page-footer  cyan darken-4">
 	 		<div class="fontFooter">
 		 		<div class="row">
@@ -109,16 +224,6 @@
 	            </div>     
             </div>
         </footer>
-
-        
-
-	
-</div>
-
-
-
-
-
 
 
  <!-- Local JS file -->

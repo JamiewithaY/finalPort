@@ -1,4 +1,11 @@
 /*index styles*/
+body{
+    background-color: #b0bec5;
+}
+
+/*.parallax-container {
+    height:200px;
+    }*/
 
 .side-nav {
     font-family: 'Limelight', cursive;
@@ -11,13 +18,9 @@
     padding-left: 15px;
 }
 
-.parallax-container {
-    height:200px;
-    }
 
-body{
-    background-color: #b0bec5;
-}
+
+
 
 .thin-text{
     font-weight: 300;
