@@ -17,214 +17,236 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
 
 <!-- FIREBASE -->
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 </head>
 
 </head>
+
+
 <body>
-<div class="container">
+<div class="containerMain">
 
 <!-- Navigation -->
+<div class="container">
+<div class="row">
+<div class="col s12">
+	<!-- MAIN NAV BAR -->
 	 <nav>
-	    <div class="nav-wrapper  cyan darken-4">
-	      <a href="https://www.youtube.com/watch?v=c-hA9NuSEMs target=_blank" class="brand-logo">Jayme Howard</a>
+	    <div class="nav-wrapper">
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	      <ul class="right hide-on-med-and-down">
-	        <li><a href="index.html">Home</a></li>
-		    <li><a href="projects.html">Portfolio</a></li>
-		    <li><a href="contact.html">Contact</a></li>
+
+			<li><a class="grey-text text-lighten-3" href="https://github.com/JamiewithaY" target="_blank">GitHub</a></li>
+	        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank">LinkedIn</a></li>
+	        <li><a class="grey-text text-lighten-3" href="https://www.visualcv.com/jayme-howard" target="_blank">Resume</a></li>
+	        <li><a href="#contact"><i class="material-icons">phone</i></a></li>
+	        <li><a href="#contact"><i class="material-icons">mail</i></a></li>
+       
 	      </ul>
+	   <!--    SIDE NAV BAR -->
 	      <ul class="side-nav" id="mobile-demo" >
-	        <li><a href="index.html">Home</a></li>
-		    <li><a href="projects.html">Portfolio</a></li>
-		    <li><a href="contact.html">Contact</a></li>
+	        <li><a class="gray-text text-lighten-1" href="https://github.com/JamiewithaY" target="_blank">GitHub</a></li>
+	        <li><a class="gray-text text-lighten-1" href="https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank">LinkedIn</a></li>
+	        <li><a class="gray-text text-lighten-1" href="https://www.visualcv.com/jayme-howard" target="_blank">Resume</a></li>
+	        <li><a class="gray-text text-lighten-1" href="#contact" >(512)456-5678</a></li>
+	        <li><a class="gray-text text-lighten-1" href="#contact" >jamiewithaY@gmail.com</a></li>
 	      </ul>
 	    </div>
 	</nav>
-
-<!-- Parallax img -->
- <div class="parallax-container valign-wrapper">
- 	<div class="container">
- 	
- 		<div class="row valign">
- 			<div class="elevatorPitch center-align">
-	 			<div class="col s8 thin-text white-text hoverable ">
-				
-	 				<p > Hi I'm Jayme. I am a shiny new Jr javaScript Developer. I have a passion for taking big problems and turning them into a beautiful solutions. Take a look at some of my recent projects or drop me a line on my contact page. Thanks for stopping by! </p>
-	  			</div>
-  			</div>
-			<div class="col s4">
-				<div class="facePic">
- 				<img src="images/profile-pic.jpeg" alt="profile pic" width="220" height="220"> 
- 				</div>
- 			</div>
- 			
-
- 		</div>
- 	</div>
-      <div class="parallax"><img src="images/texture1.jpg" ></div>
 </div>
-	
-	
-	<!-- body with bio and skillset list -->
-	
+</div>
+</div>
 
-	<div class="row">
-		
-		<!-- <div class="col s8">	
-			<div class="bio">
-			<h3>About</h3>
-			<p>Welcome! I am a Jr JavaScript Developer living in Austin, TX. I started my coding journey several months ago and recently graduated from the UT Austin javaScript Full Stack Bootcamp. I am thrilled to be joining the tech industry and look forward to diving into a new career using all my new skills, learning plenty along the way and creating beautiful solutions. Please visit my Portfolio page to see what I've been up to. I look forward to hearing from you.
-			 </p>
-		 	</div> 
-		</div> -->
-	
-		<div class="col s4 skillList ">
-			<p class="skillBtnText "> Check out my current framework specialities! </p>
-			<!-- Technolgoies Button	 -->
-			<a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="CSS/HTML | JavaScript |	Materalize | Node.js | API | MongoDB | MySql | jQuery | Express.js | Git/Github | PHP |
-		      Laravel |	Firebase | React.js | Laravel | Composer">Frameworks</a>
-		        
-     	</div>
-    </div>
-		
-	
-	<!-- Projects carousel -->
-<div class="projectsHead cyan darken-2">
+<!-- Intro Header -->
+
+<div class="container">
 	<div class="row">
 	<div class="col s12">
-		<h3>Projects</h3>
-		<p> Scroll through the carousel and click to view.</p>
+			<div class="parallax-container">
+			<div class= "parallax" class="brightimg"><img src='images/bright.jpg'>
+			  <div class="caption">
+			    <div class="intro">Hi I'm <span>Jayme</span>. A shiny new Jr javaScript Developer in Austin, TX.</div>
+			  </div>
+			</div>
+			</div>
 	</div>
 	</div>
-</div>
-<div class="carouselDiv">
-	<div class="carousel">
-	    <a class="carousel-item" href="https://jamiewithay.github.io/PlotHoles/" target="_blank"><img src="http://www.dingdongloungenz.com/wp-content/uploads/2017/01/80s.jpg" height="200" width="200"></a>
 
-	    <a class="carousel-item" href="https://jamiewithay.github.io/TriviaGame/" target="_blank"><img src="http://www.tinrooflouisville.com/getattachment/7362f7de-18d1-4261-9fbc-43babc56d461" height="200" width="200"></a>
-
-	    <a class="carousel-item" href="https://jamiewithay.github.io/Train-Schedule/" target="_blank"><img src="https://i.ytimg.com/vi/J_O0lWn0ynk/maxresdefault.jpg" height="200" width="200"></a>
-
-	    <a class="carousel-item" href="https://jamiewithay.github.io/week-4-game/" target="_blank"><img src="https://i.pinimg.com/736x/bc/a6/7f/bca67f5bbffc0d25b6e4e7c12de54069--crystal-gems-crystal-healing.jpg" height="200" width="200"></a>
-	    
-	 </div>
-</div>
-<!--  Projects Description Table -->
-	<div class="table">
-     <table class="striped">
-     	<div class="tableHead">
-        <thead>
-          <tr class="cyan darken-2">
-              <th>Project Title</th>
-              <th>Description</th>
-              <th>Technology Highlights</th>
-          </tr>
-        </thead>
+	<div class="aboutMe">
+		<div class="row">
+			<div class="col s8">
+			  <h3>About Me</h3>
+			  <p>I have a passion for taking big problems and turning them into a beautiful solutions. Take a look at some of my recent projects or drop me a line on the contact form below. Thanks for stopping by!</p>
+			</div>
+			<div class="col s4">
+			  <img src="images/profile-pic.jpeg" alt="profile pic" width="220" height="220"> 
+			</div>
 		</div>
+	</div>
+</div>
 
-        <tbody>
-          <tr>
-            <td>Retro Plot Holes</td>
-            <td>Utilizing two API's to build a Trivia Game using OMDB API and Giphy's API</td>
-            <td> API's, HTML/CSS, JS, jQuery, Firebase</td>
-          </tr>
-          <tr>
-            <td>Trivia Game</td>
-            <td> Select the correct answer to each question before the timer runs out.</td>
-            <td>HTML/CSS, JS</td>
-          </tr>
-          <tr>
-            <td>Train-Schedule</td>
-            <td>Add a new Train to the Schedule.</td>
-            <td>Minute.js and Firebase</td>
-          </tr>
-          <tr>
-            <td>Crystal Clicker Game</td>
-            <td>Try to click the correct crystal to match the computer generated number.</td>
-            <td>HTML/CSS, JS</td>
-          </tr>
-        </tbody>
-      </table>
-	</div>	
-	
+<!-- PROJECT SECTION -->
+<div class="container">
+<div class="row">
+<div class="col s12">
+		<div class="parallax-container">
+		<div class= "parallax" class="projectimg"><img src='images/project.jpg'>
+		<div class="caption">
+		   		 <div class="row">
+				 <div class="col s12">
+						<div class="projectsHead">Projects</div>
+						    
+				 </div>
+				 </div>
+		</div>
 		
+		</div>
+		</div>
+		</div>
+</div>
+</div>
+</div>
+
+<!-- PROJECT DISPLAY -->
+<div class="container">
+<div class="row">
+<div class="col s12">
+
+		<div class="carouselDiv">
+			<div class="carousel">
+				<div class="carouselHead center-align"><h5> Click on any project to view!</h5></div>
+			    <a class="carousel-item" href="https://jamiewithay.github.io/PlotHoles/" target="_blank"><img src="http://www.dingdongloungenz.com/wp-content/uploads/2017/01/80s.jpg" height="200" width="200"></a>
+
+			    <a class="carousel-item" href="https://jamiewithay.github.io/TriviaGame/" target="_blank"><img src="http://www.tinrooflouisville.com/getattachment/7362f7de-18d1-4261-9fbc-43babc56d461" height="200" width="200"></a>
+
+			    <a class="carousel-item" href="https://jamiewithay.github.io/Train-Schedule/" target="_blank"><img src="https://i.ytimg.com/vi/J_O0lWn0ynk/maxresdefault.jpg" height="200" width="200"></a>
+
+			    <a class="carousel-item" href="https://jamiewithay.github.io/week-4-game/" target="_blank"><img src="https://i.pinimg.com/736x/bc/a6/7f/bca67f5bbffc0d25b6e4e7c12de54069--crystal-gems-crystal-healing.jpg" height="200" width="200"></a>
+			    
+			 </div>
+		</div>
+		<!--  Projects Description Table -->
+			<div class="table">
+		     <table class="striped">
+		     	<div class="tableHead">
+		        <thead>
+		          <tr class="tableTop">
+		              <th>Project Title</th>
+		              <th>Description</th>
+		              <th>Technology Highlights</th>
+		          </tr>
+		        </thead>
+				</div>
+
+		        <tbody>
+		          <tr>
+		            <td>Retro Plot Holes</td>
+		            <td>Utilizing two API's to build a Trivia Game using OMDB API and Giphy's API</td>
+		            <td> API's, HTML/CSS, JS, jQuery, Firebase</td>
+		          </tr>
+		          <tr>
+		            <td>Trivia Game</td>
+		            <td> Select the correct answer to each question before the timer runs out.</td>
+		            <td>HTML/CSS, JS</td>
+		          </tr>
+		          <tr>
+		            <td>Train-Schedule</td>
+		            <td>Add a new Train to the Schedule.</td>
+		            <td>Minute.js and Firebase</td>
+		          </tr>
+		          <tr>
+		            <td>Crystal Clicker Game</td>
+		            <td>Try to click the correct crystal to match the computer generated number.</td>
+		            <td>HTML/CSS, JS</td>
+		          </tr>
+		        </tbody>
+		      </table>
+			</div>
+</div>
+</div>
 </div>
 
 
+<!-- CONTACT SECTION -->
+<div class="container">
+<div class="row">
+<div class="col s12">
+		<div class="parallax-container">
+		<div class= "parallax" class="connectimg"><img src='images/connect.jpg'>
+		<div class="caption">
+			<div class="cHead"> Contact</div>
+				
+		</div>
+		</div>	
+		</div>
+</div>
+</div>
+</div>
 
-        
-
+<!-- CONTACT FORM -->			
+<div class="container">
+<div class="row">
+<div class="col s12">          
+          <form id= "contactForm">
+          <div class="container">
+          <div class="row">
+				<div class="col offset-10 s12 center-align">
+          			<div class="connectHeadline"><h4>Let's Connect!</h4></div>
+          		</div>
+          </div>
+       	    <div class="row">
+            	<div class="input-field col s6">
+	                <input id="first_name" type="text" class="validate">
+	                <label for="first_name">First Name</label>
+            	</div>
+            	<div class="input-field col s6">
+	                <input id="last_name" type="text" class="validate">
+	                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Talk To Me</label>
+                 </div>
+                </div>
+            </div>
+         
+       
+      <!-- Submit Button -->
+	<div class="row">
+	<div class="col offset-10 s12 center-align">
+          <button  id="submitBtn" class="btn waves-effect waves-light deep-orange lighten-2 " type="submit" name="action">Submit<i class="material-icons right">send</i>
+  		  </button>
+	</div>
+	</div>
+	</div>
+	</form>
+	<a name= "contact">
+	<div class="phone "><p><strong>Phone:</strong> (512) 470-7463  |  <strong>Email: </strong>jamiewithaY@gmail.com</p></div>
 	
 </div>
-
-
-<!-- contact form -->
-<div id="form" class="container cyan lighten-5 ">
-	<div class="row">
-	<div class="col offset-10 s12">
-
-	  <div class="row ">
-	    <form class="col s12">
-	      <div class="row">
-	        <div class="input-field col s6">
-	          <input id="first_name" type="text" class="validate">
-	          <label for="first_name">First Name</label>
-	        </div>
-	        <div class="input-field col s6">
-	          <input id="last_name" type="text" class="validate">
-	          <label for="last_name">Last Name</label>
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="input-field col s12">
-	          <input id="email" type="email" class="validate">
-	          <label for="email">Email</label>
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="col s12">
-	          <div class="input-field col s12">
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
-	          <label for="textarea1">Talk To Me</label>
-	        </div>
-	          </div>
-	        </div>
-	<!-- Submit Button -->
-	        <div class="row">
-	        	<div class="col s12 center-align">
-	        		<button  id="submitBtn" class="btn waves-effect waves-light orange darken- " type="submit" name="action">Submit<i class="material-icons right">send</i>
-	 	</button>
-	        	</div>
-	        </div>
-	   </div>
-
- </div>   
-</div>	
-	    
+</div>
 </div>
 
-<!-- FOOTER -->
-	 	<footer class="page-footer  cyan darken-4">
-	 		<div class="fontFooter">
-		 		<div class="row">
-		 		<div class="col s8">
-		 			<div class="copyright white-text">
-	            	© 2017 Copyright 
-	            	</div>
-		 		</div>
-		 		<div class="col s4">
-	            <a class="grey-text text-lighten-3" href="https://github.com/JamiewithaY" target="_blank">GitHub   |</a>
-	            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jayme-howard-046b726a/" target="_blank">LinkedIn   |</a>
-	            <a class="grey-text text-lighten-3" href="https://www.visualcv.com/jayme-howard" target="_blank">Resume</a></li>
-	            </div>
-	            </div>     
-            </div>
-        </footer>
 
+
+
+
+
+
+</div> <!-- MainContainer Div -->
 
  <!-- Local JS file -->
 	

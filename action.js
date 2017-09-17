@@ -56,6 +56,20 @@
     });
 
 
+//function to reset the form after content is submitted to the Firebase
+function contactReset() {
+   document.getElementById("contactForm").reset();
+}
+//toast function to replace the alert
+// Materialize.toast(message, displayLength, className, completeCallback);
+ function toast1( ){
+ Materialize.toast("Thanks for reaching out! I'll be in touch soon!", 3000); // 4000 is the duration of the toast
+ }
+
+ function toast2( ){
+ Materialize.toast("Hey, don't quit now. One of the fields hasn't been filled out.", 3000); // 4000 is the duration of the toast
+ }
+
 
 $("#submitBtn").on("click", function(e){
 	e.preventDefault();
@@ -69,9 +83,12 @@ $("#submitBtn").on("click", function(e){
 
 
  	if (!firstName || !lastName || !emailaddress || !message){
- 		alert("Hey, don't quit now. One of the fields hasn't been filled out.");
+ 		// alert("Hey, don't quit now. One of the fields hasn't been filled out.");
+    toast2();
  	} else {
- 		alert("Thanks for reaching out! I'll be in touch soon!");
+ 		// alert("Thanks for reaching out! I'll be in touch soon!");
+    toast1();
+    contactReset();
 
  //pushing the form data up to firebase
         database.ref().push({
@@ -81,7 +98,7 @@ $("#submitBtn").on("click", function(e){
           "Message": message
         });
 
-        document.getElementById("form").reset();
+        
  	}
  });
 

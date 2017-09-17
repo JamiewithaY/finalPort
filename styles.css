@@ -1,91 +1,185 @@
 /*index styles*/
 body{
-    background-color: #b0bec5;
+    background-color: #73604f;
+    font-family: 'Merriweather', serif;
+    
 }
 
-/*.parallax-container {
-    height:200px;
-    }*/
+.nav-wrapper{
+    font-family: 'Playfair Display', serif;
+    background-color: #3c8d93;
+    
+}
 
+
+
+.containerMain {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Nav bar for smaller screens*/
 .side-nav {
-    font-family: 'Limelight', cursive;
-    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    
 }
 
 .nav-wrapper {
     
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+   
+}
+
+.intro, .cHead, .projectsHead {
+  background-color: #3b3535;
+  font-family: 'Playfair Display', serif;
+  color: #d9d7ca;
+  padding: 30px;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.intro span{
+    font-size: 30px;
+}
+
+.projectsHead, .cHead {
+    font-size: 30px;
+
+}
+
+
+/*parallax images*/
+
+
+.brightimg, .projectimg, .connectimg {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
 }
 
 
 
+/*About Me Section*/
 
 
-.thin-text{
-    font-weight: 300;
-    background: rgba(96, 125, 139, .5);
-    padding: 40px;
-    border-radius: 20px;
+.aboutMe, .frameworks {
+    color: #1f454d;
+    background-color: #d9d7ca;
+    text-align:center;
+    padding:40px 80px;
+    text-align: justify;
 }
 
-p {
-    font-size: 20px;
-}
-
-.skillList {
-    border: 3px solid black;
+.aboutMe  {
     text-align: center;
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
-    background-color: #b2dfdb;
-    margin-top: 35px;
 
 }
 
-.skillBtnText {
-
-    font-size: 16px;
-    padding: 25px;
+.aboutMe img{
+    border-radius: 50%
 }
 
-.fontFooter {
-    font-size: 17px;
+.aboutMe p {
+    font-size: 18px;
 }
 
-footer {
-    padding: 10px;
-}
+
+
 
 /*contact styles*/
-#form {
+.connectHeadline{
+   color:  #d9d7ca;
+}
+
+#contactForm{
+    background-color: #1f454d;
     padding: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.phone {
+    background-color: #3c8d93;
+    color: white;
+    font-size: 19px;
+    padding: 15px;
+    text-align: center;
+
 }
 
 
 
 /*project styles*/
-.projectsHead {
-    padding: 30px;
-    text-align: center;
+.projectsContainer {
+    position:absolute;
+    color:#ddd;
+    background-color:#1f454d;
+    text-align:center;
+    padding:30px 80px;
+    text-align: justify;
+}
 
+.carousel{
+    background-color: #3c8d93;
+    border: 5px solid #4f3538;
+
+}
+
+.carouselHead {
+   font-family: 'Playfair Display', serif; 
+   background-color:  #1f454d;
+   padding: 7px;
+   color: #d9d7ca;
 }
 
 
 
+/*projects table info*/
 .table {
-    background-color: #b2dfdb;
+    background-color: #b0bec5;
+    color: black;
+    margin-top: 15px;
     
 }
 
+.tableTop {
+    background-color: #1f454d;
+    color: #d9d7ca;
+}
 
- 
+
+
+
+
+
+/*MEDIA QUERIES */
 .parallax img {
     @media #{$small-and-down} { max-width: 200%; }
     @media #{$medium-and-up} { width: 100%; }
 }
 
-
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
 
 
